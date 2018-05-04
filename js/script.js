@@ -18,6 +18,10 @@ ourRequest.onerror = function() {
 ourRequest.send();
 
 function createHTML(petsData){
-    console.log("testing from my function BS");
-    console.log(petsData);
+    var rawTemplate = document.getElementById("petsTemplateBs").innerHTML;
+    var compiledTemplate = Handlebars.compile(rawTemplate);
+    var ourGeneratedHTML = compiledTemplate(petsData)
+
+    var petsContainer = document.getElementById("pets-container");
+    petsContainer.innerHTML = ourGeneratedHTML;
 }
