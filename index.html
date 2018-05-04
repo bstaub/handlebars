@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Staub">
+    <meta name="description" content="Example WebAPP">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+    var exmapledata = {
+        "pets": [
+        {
+            "name" : "Purrsloud",
+            "species" : "Cat",
+            "favFoods" : ["wet food", "dry food", "<strong>any</strong> food"],
+            "birthYear" : 2016,
+            "photo" : "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+        },
+        {
+            "name" : "Barksalot",
+            "species" : "Dog",
+            "birthYear" : 2008,
+            "photo" : "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+        },
+        {
+            "name" : "Meowsalot",
+            "species" : "Cat",
+            "favFoods" : ["tuna", "catnip", "celery"],
+            "birthYear" : 2012,
+            "photo" : "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+        }
+    ]
+    }
+</script>
+
+
+<div class="page-wrap">
+    <h1>Handlebars Tutorial</h1>
+    <div id="pets-container"></div>
+</div>
+
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
