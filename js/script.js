@@ -5,6 +5,7 @@ ourRequest.onload = function() {
         // This is where we'll do something with the retrieved data
         var data = JSON.parse(ourRequest.responseText);
         console.log(data);
+        createHTML(data);
     } else {
         console.log("We connected to the server, but it returned an error.");
     }
@@ -15,3 +16,8 @@ ourRequest.onerror = function() {
 };
 
 ourRequest.send();
+
+function createHTML(petsData){
+    console.log("testing from my function BS");
+    console.log(petsData);
+}
