@@ -18,9 +18,9 @@ ourRequest.onerror = function() {
 ourRequest.send();
 
 function createHTML(petsData){
-    var rawTemplate = document.getElementById("petsTemplateBs").innerHTML;
-    var compiledTemplate = Handlebars.compile(rawTemplate);
-    var ourGeneratedHTML = compiledTemplate(petsData)
+    var rawTemplate = document.getElementById("petsTemplateBs").innerHTML;  //selecting temaplate code, just string of html text
+    var compiledTemplate = Handlebars.compile(rawTemplate);  //create dynamic template from this html text with compile function
+    var ourGeneratedHTML = compiledTemplate(petsData);  //input javascript object and generate html for dom
 
     var petsContainer = document.getElementById("pets-container");
     petsContainer.innerHTML = ourGeneratedHTML;
