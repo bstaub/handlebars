@@ -17,6 +17,12 @@ ourRequest.onerror = function() {
 
 ourRequest.send();
 
+
+
+Handlebars.registerHelper("calculateAge", function(){
+   return "testing 123";
+});
+
 function createHTML(petsData){
     var rawTemplate = document.getElementById("petsTemplateBs").innerHTML;  //selecting temaplate code, just string of html text
     var compiledTemplate = Handlebars.compile(rawTemplate);  //create dynamic template from this html text with compile function
