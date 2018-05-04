@@ -19,8 +19,16 @@ ourRequest.send();
 
 
 
-Handlebars.registerHelper("calculateAge", function(){
-   return "testing 123";
+Handlebars.registerHelper("calculateAge", function(birthYear){
+   var age = new Date().getFullYear() - birthYear;
+
+   if (age > 2){
+       return age + "years old";
+   }else{
+       return 'not old enough, less than 2 years old!';
+   }
+
+
 });
 
 function createHTML(petsData){
